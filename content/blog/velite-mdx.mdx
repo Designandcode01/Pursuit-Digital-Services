@@ -1,0 +1,63 @@
+---
+title: "How Velite and MDX Work Together in Modern Next.js Blogs"
+date: "2024-01-15"
+author: "Your Name"
+description: "Understanding the powerful synergy between Velite's content orchestration and MDX's interactive authoring capabilities in Next.js blogs."
+tags: ["nextjs", "mdx", "velite", "content", "typescript"]
+slug: "velite-mdx-complementary-tools"
+category: "Development"
+image: "/blog/velite-mdx-cover.jpg"
+published: true
+---
+
+# How Velite and MDX Work Together in Modern Next.js Blogs
+
+<Callout type="info">
+This post explains the complementary relationship between Velite and MDX in Next.js blog development. Perfect for developers building content-rich applications!
+</Callout>
+
+## The Perfect Partnership
+
+In the world of modern Next.js blogging, **Velite** and **MDX** have emerged as a power duo. They're not competitors—they're complementary tools that solve different but interconnected problems.
+
+### Visual Analogy
+
+Think of building a blog like running a **restaurant**:
+
+- **Velite** = The **kitchen and inventory system**  
+  (Organizes ingredients, validates recipes, manages stock)
+
+- **MDX** = The **interactive menu**  
+  (Beautiful presentation with engaging elements)
+
+## What Each Tool Brings to the Table
+
+### Velite: The Content Orchestrator
+
+Velite is a **build-time content processing pipeline** that brings structure and type-safety to your content. Here's what it excels at:
+
+```typescript filename="velite.config.ts"
+import { defineConfig, defineCollection, s } from 'velite'
+
+const posts = defineCollection({
+  name: 'Post',
+  pattern: 'posts/**/*.mdx', // Processes MDX files!
+  schema: s.object({
+    title: s.string().max(100),
+    slug: s.slug('posts'),
+    date: s.isodate(),
+    description: s.string(),
+    // MDX content processed by Velite
+    body: s.mdx(),
+    // Image optimization built-in
+    cover: s.image(),
+    published: s.boolean().default(false)
+  })
+})
+
+export default defineConfig({
+  collections: { posts },
+  output: {
+    data: '.velite'
+  }
+})
