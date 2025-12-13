@@ -9,7 +9,7 @@ const OurApproach: React.FC = () => {
     <div className="max-w-4xl mx-auto px-4 py-8 font-sans bg-white">
       {/* Header */}
       <header className="text-center mb-12">
-        <div className="inline-block px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full text-sm font-medium mb-4">
+        <div className="inline-block px-4 py-2 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-full text-sm font-medium mb-4">
           Inside Pursuit Digital
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -20,7 +20,7 @@ const OurApproach: React.FC = () => {
         </p>
         <div className="flex items-center justify-center mt-6 text-gray-500">
           <div className="flex items-center">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center mr-3">
+            <div className="w-10 h-10 rounded-full bg-linear-to-r from-blue-500 to-purple-500 flex items-center justify-center mr-3">
               <span className="text-white font-semibold">P</span>
             </div>
             <span>Pursuit Digital Services</span>
@@ -31,7 +31,7 @@ const OurApproach: React.FC = () => {
       </header>
 
       {/* Featured Image */}
-      <div className="relative h-64 rounded-xl overflow-hidden mb-12 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+      <div className="relative h-64 rounded-xl overflow-hidden mb-12 bg-linear-to-r from-blue-500 to-purple-600 flex items-center justify-center">
         <div className="text-center p-6 text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Growth-Driven Digital Solutions</h2>
           <p className="max-w-2xl mx-auto">Where strategy, creativity, and technology converge</p>
@@ -62,7 +62,7 @@ const OurApproach: React.FC = () => {
               onClick={() => setActiveSection(section)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 activeSection === section
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
+                  ? 'bg-linear-to-r from-blue-600 to-purple-600 text-white'
                   : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-100'
               }`}
             >
@@ -103,7 +103,7 @@ const OurApproach: React.FC = () => {
               </p>
             </div>
             
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl border-l-4 border-blue-400">
+            <div className="bg-linear-to-br from-blue-50 to-purple-50 p-6 rounded-xl border-l-4 border-blue-400">
               <div className="text-gradient-to-r from-blue-600 to-purple-600 text-2xl font-bold mb-3">3</div>
               <h3 className="font-semibold text-gray-900 mb-2">Continuous Optimization</h3>
               <p className="text-gray-600">
@@ -133,7 +133,7 @@ const OurApproach: React.FC = () => {
 
           <div className="space-y-12 mb-12">
             <div className="flex flex-col md:flex-row items-start">
-              <div className="bg-blue-100 text-blue-800 font-bold rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+              <div className="bg-blue-100 text-blue-800 font-bold rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0 md:mr-6 shrink-0">
                 1
               </div>
               <div>
@@ -152,7 +152,7 @@ const OurApproach: React.FC = () => {
             </div>
 
             <div className="flex flex-col md:flex-row items-start">
-              <div className="bg-blue-100 text-blue-800 font-bold rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+              <div className="bg-blue-100 text-blue-800 font-bold rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0 md:mr-6 shrink-0">
                 2
               </div>
               <div>
@@ -171,7 +171,7 @@ const OurApproach: React.FC = () => {
             </div>
 
             <div className="flex flex-col md:flex-row items-start">
-              <div className="bg-blue-100 text-blue-800 font-bold rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+              <div className="bg-blue-100 text-blue-800 font-bold rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0 md:mr-6 shrink-0">
                 3
               </div>
               <div>
@@ -190,7 +190,7 @@ const OurApproach: React.FC = () => {
             </div>
 
             <div className="flex flex-col md:flex-row items-start">
-              <div className="bg-blue-100 text-blue-800 font-bold rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+              <div className="bg-blue-100 text-blue-800 font-bold rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0 md:mr-6 shrink-0">
                 4
               </div>
               <div>
@@ -261,17 +261,17 @@ const OurApproach: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-gradient-to-br from-blue-600 to-purple-600 p-6 rounded-xl text-white text-center">
+            <div className="bg-linear-to-br from-blue-600 to-purple-600 p-6 rounded-xl text-white text-center">
               <div className="text-3xl font-bold mb-2">187%</div>
               <p>Average increase in organic traffic for SEO clients</p>
             </div>
             
-            <div className="bg-gradient-to-br from-blue-500 to-purple-500 p-6 rounded-xl text-white text-center">
+            <div className="bg-linear-to-br from-blue-500 to-purple-500 p-6 rounded-xl text-white text-center">
               <div className="text-3xl font-bold mb-2">42%</div>
               <p>Average reduction in cost-per-lead for PPC clients</p>
             </div>
             
-            <div className="bg-gradient-to-br from-blue-700 to-purple-700 p-6 rounded-xl text-white text-center">
+            <div className="bg-linear-to-br from-blue-700 to-purple-700 p-6 rounded-xl text-white text-center">
               <div className="text-3xl font-bold mb-2">3.8x</div>
               <p>Average ROI for our comprehensive digital marketing clients</p>
             </div>
@@ -293,7 +293,7 @@ const OurApproach: React.FC = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-xl text-center text-white mb-16">
+        <section className="bg-linear-to-r from-blue-600 to-purple-600 p-8 rounded-xl text-center text-white mb-16">
           <h2 className="text-2xl font-bold mb-4">Ready to Experience the Pursuit Difference?</h2>
           <p className="mb-6 max-w-2xl mx-auto">
             Let us develop a customized growth strategy for your business. Schedule a free consultation 
