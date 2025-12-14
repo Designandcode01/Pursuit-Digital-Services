@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Navigation } from "@/components/Navigation";
 import { ThemeProvider } from "next-themes";
+import ContactHeader from "@/components/ContactHeader";
 
 
 const geistSans = Geist({
@@ -44,6 +45,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ContactHeader />
           <Navbar />
           <Navigation />
           
