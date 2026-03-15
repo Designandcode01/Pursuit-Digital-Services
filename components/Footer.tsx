@@ -77,6 +77,14 @@ const Footer = () => {
               <Icons.design className="h-4 w-4 mr-1" />
               Terms of Service
             </Link>
+            <Link
+              href='/affiliate'
+              // services/design
+              className='text-gray-700 hover:text-purple-600 text-sm font-medium flex items-center'
+            >
+              <Icons.design className="h-4 w-4 mr-1" />
+              Affiliate - Sell and Earn
+            </Link>
 
           </div>
 
@@ -100,13 +108,14 @@ const Footer = () => {
               <Icons.webDevelopment className="h-4 w-4 mr-1" />
               Web Dev
             </Link>
+
             <Link
               href='/join'
               // services/seo
               className='text-gray-700 hover:text-purple-600 text-sm font-medium flex items-center'
             >
               <Icons.seo className="h-4 w-4 mr-1" />
-              SEO
+              SEO - On Page
             </Link>
           </div>
         </div>

@@ -11,7 +11,7 @@ import { ThemeToggle } from "./theme-toggle";
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Blog", href: "/blog" },
-  { name: "Express Interest", href: "/join" },
+  { name: "Select to Buy", href: "/selecttobuy" },
 ];
 
 export function Navigation() {
@@ -50,6 +50,9 @@ export function Navigation() {
             <Button size="sm" variant="outline" className="hidden md:inline-flex">
               <Link href="/contact">Contact</Link>
             </Button>
+            <Button size="sm" variant="outline" className="hidden md:inline-flex">
+              <Link href="/affiliate">Affiliate - Sell and Earn</Link>
+            </Button>
 
             {/* Mobile menu button */}
             <button
@@ -85,6 +88,20 @@ export function Navigation() {
               <Button className="w-full" asChild>
                 <Link href="/contact" onClick={() => setIsOpen(false)}>
                   Contact Us
+                </Link>
+              </Button>
+            </div>
+            <div className="pt-4 px-4">
+              <Button className="w-full" asChild>
+                <Link href="/affiliate" onClick={() => setIsOpen(false)}>
+                  Affiliate - Sell and Earn
+                </Link>
+              </Button>
+              </div>
+            <div className="pt-4 px-4">
+              <Button className="w-full" asChild>
+                <Link href="/join" onClick={() => setIsOpen(false)}>
+                  Express Interest
                 </Link>
               </Button>
             </div>
