@@ -6,7 +6,7 @@ export default function ContactHeader() {
       {/* Top Contact Bar – Visible on Desktop and Tablet */}
       
       <div className="hidden md:flex justify-center items-center gap-6 bg-blue-100 text-sm text-blue-800 py-1">
-        <div>
+        {/* <div>
           📞{" "}
           <a
             href="tel:+923008245133"
@@ -14,7 +14,7 @@ export default function ContactHeader() {
           >
             +923008245133
           </a>
-        </div>
+        </div> */}
 
         <div>
           🟢{" "}
